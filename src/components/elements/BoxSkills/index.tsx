@@ -24,14 +24,12 @@ export default function BoxSkills(props: types) {
             className="lg:max-w-28 md:max-w-28 bg-slate-600 max-sm:w-1/4 max-md:w-1/3 rounded-lg border-sm p-4 place-self-center"
             key={index}
           >
-            <Image
-              width={100}
-              height={100}
+            <img
               src={`/./Icons/Icons Normal/${item.name}.${
                 item.name === "next-js" ? "svg" : "png"
               }`}
               alt="Tes"
-              className="w-full"
+              className="max-w-[50px] max-h-[50px]"
             />
           </div>
         ))}
