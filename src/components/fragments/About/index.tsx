@@ -1,9 +1,11 @@
 import Icon from "@/components/elements/Icon";
 import { ThemeContext } from "@/components/elements/ThemeContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 const About = () => {
   const theme = useContext(ThemeContext);
+  const [onMyBiodata, setOnMyBiodata] = useState(false);
+
   return (
     <div
       ref={theme?.tentangRef}
@@ -39,9 +41,12 @@ const About = () => {
             CSS), JavaScript, React JS, dan Next JS. Saya selalu berusaha untuk
             terus belajar dan mengembangkan kemampuan saya di bidang ini.
           </p>
-          <span className="bg-yellow-600 px-4 py-2 cursor-pointer rounded hover:bg-yellow-700 w-auto text-center">
+          <button
+            onClick={() => setOnMyBiodata(true)}
+            className="bg-yellow-600 px-4 py-2 cursor-pointer rounded hover:bg-yellow-700 w-auto text-center"
+          >
             Lihat Selengkapnya
-          </span>
+          </button>
           <hr className="border-none h-1 bg-yellow-600 rounded-full" />
           <div className="block gap-2 w-full">
             <p className="font-semibold">Media Sosial Saya</p>
@@ -58,6 +63,117 @@ const About = () => {
               />
             </div>
           </div>
+        </div>
+      </div>
+      <div
+        className={`fixed ${
+          onMyBiodata ? "top-1/2 bottom-0" : "-bottom-[100rem] top-[100rem]"
+        }  left-1/2 -translate-x-1/2 transition-all -translate-y-1/2 w-screen h-screen flex justify-center items-center z-50`}
+      >
+        <div
+          className="w-[27rem] h-[34rem] overflow-auto bg-white rounded-2xl px-4 py-2 relative sm:mx-4 max-sm:mx-4"
+          id="biodata"
+        >
+          <div className="flex justify-between items-center">
+            <p className="text-lg text-blue-700">Biodata</p>
+            <button
+              onClick={() => setOnMyBiodata(false)}
+              className="text-3xl cursor-default"
+            >
+              &times;
+            </button>
+          </div>
+          <p>Nama Lengkap : Muhammad Ardiansyah Firdaus</p>
+          <hr />
+          <p>Umur : 20</p>
+          <hr />
+          <p>Jenis Kelamin : Laki - Laki</p>
+          <hr />
+          <p>Agama : Islam</p>
+          <hr />
+          <p>Status : Mahasiswa</p>
+          <hr />
+          <p>Tempat, Tanggal Lahir : Sumedang, 03 Januari 2004</p>
+          <hr />
+          <p>
+            Alamat : Dusun Sindangkasih, Desa Sindangpakuon, RT 001 RW 008,
+            Kecamatan Cimanggung, Kabupaten Sumedang, Jawa Barat
+          </p>
+          <hr />
+          <p>Pendidikan : </p>
+          <ul className="ps-4">
+            <li className="list-disc">
+              Universitas: Universitas Muhammadiyah Bandung
+            </li>
+            <li className="list-disc">Jurusan: Teknik Informatika</li>
+            <li className="list-disc">Semester: 4</li>
+            <li className="list-disc">
+              Sekolah Menengah Atas: SMAN Cimanggung, Jurusan MIPA
+            </li>
+          </ul>
+          <hr />
+          <p>Minat : </p>
+          <ul className="ps-4">
+            <li className="list-disc">Teknologi</li>
+            <li className="list-disc">Web Development</li>
+            <li className="list-disc">Mobile Development</li>
+          </ul>
+          <hr />
+          <p>Keahlian : </p>
+          <ul className="ps-4">
+            <li className="list-disc">HTML</li>
+            <li className="list-disc">CSS (Tailwind CSS & Bootstrap)</li>
+            <li className="list-disc">JavaScript</li>
+            <li className="list-disc">React JS</li>
+            <li className="list-disc">Next JS</li>
+          </ul>
+          <hr />
+          <p>Proyek dan Pengalaman : </p>
+          <ul className="ps-4">
+            <li className="list-disc">
+              Portofolio Website : Mengembangkan dan memelihara portofolio
+              website pribadi.
+            </li>
+            <li className="list-disc">
+              Website Restoran : Membuat website untuk restoran dengan fitur
+              blog atau berita di homepage.
+            </li>
+            <li className="list-disc">
+              Website Kampus : Mengembangkan website kampus dengan fitur indeks
+              prestasi akademik dan forum kampus.
+            </li>
+            <li className="list-disc">
+              Admin Panel Project : Mengembangkan admin panel dengan navigasi
+              pengaturan profil.
+            </li>
+            <li className="list-disc">
+              Proposal Project : Menulis proposal untuk proyek pembuatan web
+              dengan fitur CRUD berbasis PHP dan MySQL.
+            </li>
+            <li className="list-disc">
+              Empowering Disadvantaged Families Project : Mengembangkan proyek
+              untuk membantu keluarga kurang mampu dengan teknologi seperti
+              WhatsApp Business untuk penjualan dan bantuan makanan serta uang
+              tunai
+            </li>
+          </ul>
+          <hr />
+          <p>Keterampilan Tambahan :</p>
+          <ul className="ps-4">
+            <li className="list-disc">React Router</li>
+            <li className="list-disc">Full Stack Development Next JS</li>
+            <li className="list-disc">TypeScript</li>
+            <li className="list-disc">Google OAuth Implementation</li>
+            <li className="list-disc">
+              Database Management Firebase dan MySql
+            </li>
+          </ul>
+          <hr />
+          <p>Hobi dan Minat Pribadi : </p>
+          <ul className="ps-4">
+            <li className="list-disc">Bermain game</li>
+            <li className="list-disc">Travelling</li>
+          </ul>
         </div>
       </div>
     </div>
