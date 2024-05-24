@@ -12,16 +12,14 @@ export default function BoxSkills(props: types) {
 
   return (
     <div className="lg:mx-14 rounded-2xl mb-8">
-      <p className="text-center mb-4 text-white lg:text-xl">
-        {titleSkills}
-      </p>
+      <p className="text-center mb-4 text-white lg:text-xl">{titleSkills}</p>
       <div
         className="flex lg:gap-12 gap-2 max-sm:gap-2 max-md:gap-2 items-center flex-wrap justify-center"
         ref={boxRef}
       >
         {contentSkills.map((item: any, index: number) => (
           <div
-            className="lg:max-w-28 md:max-w-28 bg-slate-600 max-sm:w-1/4 max-md:w-1/3 rounded-lg border-sm p-4 place-self-center"
+            className="lg:max-w-28 md:max-w-28 bg-slate-600 max-sm:w-1/4 max-md:w-1/3 rounded-lg border-sm p-4 flex items-center justify-center"
             key={index}
           >
             <img
@@ -29,7 +27,7 @@ export default function BoxSkills(props: types) {
                 item.name === "next-js" ? "svg" : "png"
               }`}
               alt="Tes"
-              className="max-w-[50px] max-h-[50px]"
+              className="max-w-[50px] max-h-[50px] m-auto place-self-center"
             />
           </div>
         ))}
