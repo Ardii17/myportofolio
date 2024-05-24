@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       ref={theme?.tentangRef}
-      className="w-full lg:h-screen md:px-12 h-auto py-6 max-sm:px-8 sm:px-8 max-md:px-12 lg:px-14 bg-blue-800 lg:block justify-center lg:parallax min-lg:parallax"
+      className="w-full lg:h-screen md:px-12 h-auto py-6 max-sm:px-6 sm:px-6 max-md:px-12 lg:px-14 bg-blue-800 lg:block justify-center lg:parallax min-lg:parallax"
     >
       <p className="text-center text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
         Tentang Saya

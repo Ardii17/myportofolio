@@ -8,7 +8,6 @@ const Blogs = () => {
     <div
       ref={theme?.blogRef}
       className="w-full lg:parallax lg:h-screen h-auto py-6 max-sm:px-8 sm:px-8 md:px-12 max-md:px-12 lg:px-14 bg-blue-800 lg:block justify-center min-lg:parallax"
-      // data-aos="fade-up"
     >
       <p className="text-center text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
         Projek Saya

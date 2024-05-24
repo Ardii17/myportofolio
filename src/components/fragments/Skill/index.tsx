@@ -52,7 +52,6 @@ const Skills = () => {
     <div
       ref={theme?.skillsRef}
       className="w-full lg:h-screen py-6 max-sm:px-8 sm:px-8 md:px-12 max-md:px-12 lg:px-14 sm:h-auto bg-center bg-cover bg-no-repeat"
-      // data-aos="fade-up"
       style={{ backgroundImage: "url(./../Background/Background.png)" }}
     >
       <p className="text-center max-sm:px-4 text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
