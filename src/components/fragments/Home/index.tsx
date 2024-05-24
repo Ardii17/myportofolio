@@ -18,9 +18,9 @@ const Home = () => {
   return (
     <div
       ref={theme?.berandaRef}
-      className="w-full lg:parallax max-sm:px-8 max-md:px-12 lg:px-20 h-screen min-w-screen flex justify-end items-center"
+      className="w-full lg:parallax max-sm:px-8 md:px-12 max-md:px-12 lg:px-20 h-screen min-w-screen flex justify-end items-center"
     >
-      <div className="text-white lg:w-2/3 max-sm:w-full max-md:w-2/3 flex flex-col gap-3">
+      <div className="text-white lg:w-2/3 max-sm:w-full md:w-1/2 flex flex-col gap-3">
         <p className="text-2xl tracking-wide font-semibold max-sm:text-xl max-md:text-xl">
           - I'm{" "}
           <span className="text-yellow-400">Muhammad Ardiansyah Firdaus</span>
@@ -41,7 +41,7 @@ const Home = () => {
           Download CV
         </button>
       </div>
-      <div className="lg:w-1/2 max-md:w-2/3 max-sm:hidden lg:parallax">
+      <div className="lg:w-1/2 max-md:w-1/2 md:w-1/2 max-sm:hidden lg:parallax">
         <img
           src="./../Backgrounds/Programming.png"
           alt="Programming"

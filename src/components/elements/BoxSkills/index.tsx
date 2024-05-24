@@ -16,12 +16,12 @@ export default function BoxSkills(props: types) {
         {titleSkills}
       </p>
       <div
-        className="flex lg:gap-12 max-sm:gap-2 max-md:gap-2 items-center flex-wrap justify-center"
+        className="flex lg:gap-12 gap-2 max-sm:gap-2 max-md:gap-2 items-center flex-wrap justify-center"
         ref={boxRef}
       >
         {contentSkills.map((item: any, index: number) => (
           <div
-            className="lg:w-28 bg-slate-600 max-sm:w-1/4 max-md:w-1/3 rounded-lg border-sm p-4 place-self-center"
+            className="lg:max-w-28 md:max-w-28 bg-slate-600 max-sm:w-1/4 max-md:w-1/3 rounded-lg border-sm p-4 place-self-center"
             key={index}
           >
             <Image

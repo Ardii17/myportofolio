@@ -34,13 +34,13 @@ const Contact = () => {
   return (
     <div
       ref={theme?.kontakRef}
-      className="w-full lg:parallax lg:h-screen h-auto py-6 max-sm:px-8 max-md:px-12 lg:px-14 lg:block justify-center min-lg:parallax"
+      className="w-full lg:parallax lg:h-screen h-auto py-6 max-sm:px-8 lg:px-14 lg:block justify-center min-lg:parallax md:px-48"
       // data-aos="fade-up"
     >
       <p className="text-center text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
         Kontak Saya
       </p>
-      <p className="text-white text-sm opacity-70 text-center max-sm:mb-1 lg:mb-8">
+      <p className="text-white text-sm opacity-70 text-center mb-4">
         Hubungi saya bila terdapat sesuatu dibawah
       </p>
       <form

@@ -7,24 +7,23 @@ const About = () => {
   return (
     <div
       ref={theme?.tentangRef}
-      className="w-full lg:h-screen h-auto py-6 max-sm:px-8 max-md:px-12 lg:px-14 bg-blue-800 lg:block justify-center lg:parallax min-lg:parallax"
-      // data-aos="fade-up"
+      className="w-full lg:h-screen md:px-12 h-auto py-6 max-sm:px-8 max-md:px-12 lg:px-14 bg-blue-800 lg:block justify-center lg:parallax min-lg:parallax"
     >
       <p className="text-center text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
         Tentang Saya
       </p>
-      <p className="text-white text-sm opacity-70 text-center max-sm:mb-1 lg:mb-3">
+      <p className="text-white text-sm opacity-70 text-center mb-4">
         Profil lengkap tentang saya
       </p>
       <div className="max-sm:block max-md:flex flex gap-6 max-sm:mt-5 lg:mt-16 justify-center h-full">
-        <div className="lg:w-1/3 max-sm:w-full max-md:w-1/3 relative transition-transform ease-in-out translate-y-0">
+        <div className="lg:w-1/3 max-sm:w-full max-md:w-2/6 md:w-2/6 relative transition-transform ease-in-out translate-y-0">
           <img
             src="./../ProfileIMG/Ardi.png"
             alt="Ardi"
             className="w-full rounded-2xl"
           />
         </div>
-        <div className="lg:w-2/3 max-sm:w-full max-md:w-1/2 text-white flex gap-2 flex-col">
+        <div className="lg:w-2/3 max-sm:w-full max-md:w-4/6 md:w-4/6 text-white flex gap-2 flex-col">
           <p className="text-yellow-400 font-semibold">
             Hello I'm Muhammad Adiansyah Firdaus 🙌
           </p>

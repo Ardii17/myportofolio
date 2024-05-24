@@ -13,7 +13,7 @@ const Blogs = () => {
       <p className="text-center text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
         Projek Saya
       </p>
-      <p className="text-white text-sm opacity-70 text-center max-sm:mb-1 lg:mb-3">
+      <p className="text-white text-sm opacity-70 text-center mb-4">
         Projek projek yang saya kerjakan sejak awal
       </p>
       <div className="flex gap-6 justify-center w-full flex-wrap">
