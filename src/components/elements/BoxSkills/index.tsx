@@ -28,7 +28,7 @@ export default function BoxSkills(props: types) {
               width={100}
               height={100}
               src={`/./Icons/Icons Normal/${item.name}.${
-                item.name === "next-js" ? "svg" : "png "
+                item.name === "next-js" ? "svg" : "png"
               }`}
               alt="Tes"
               className="w-full"
