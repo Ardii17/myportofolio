@@ -58,7 +58,7 @@ const Navbar = () => {
           <List onClick={theme?.scrollToBeranda}>Beranda</List>
           <List onClick={theme?.scrollToTentang}>Tentang</List>
           <List onClick={theme?.scrollToSkills}>Skill</List>
-          <List onClick={theme?.scrollToBeranda}>Blog</List>
+          <List onClick={theme?.scrollToBlog}>Blog</List>
           <List onClick={theme?.scrollToKontak}>Kontak</List>
         </ul>
       </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
           <List onClick={theme?.scrollToBeranda}>Beranda</List>
           <List onClick={theme?.scrollToTentang}>Tentang</List>
           <List onClick={theme?.scrollToSkills}>Skill</List>
-          <List onClick={theme?.scrollToBeranda}>Blog</List>
+          <List onClick={theme?.scrollToBlog}>Blog</List>
           <List onClick={theme?.scrollToKontak}>Kontak</List>
         </ul>
       </div>
