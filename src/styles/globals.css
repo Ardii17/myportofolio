@@ -9,18 +9,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-* {
-  box-sizing: border-box;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background-color: #f7f8fc;
-  font-family: 'Poppins', sans-serif;
-  color: #10182f;
-}
 
 .card {
   cursor: pointer;
