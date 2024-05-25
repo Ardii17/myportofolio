@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 const About = () => {
   const theme = useContext(ThemeContext);
   const [onMyBiodata, setOnMyBiodata] = useState(false);
+  const message = "Hallo, I Would like to contact you";
 
   return (
     <div
@@ -56,10 +57,14 @@ const About = () => {
                 name="facebook"
                 link="https://web.facebook.com/profile.php?id=100026299818838"
               />
-              <Icon name="tiktok" link="https://www.tiktok.com/@gtu075" />
+              <Icon name="tiktok" link="https://www.tiktok.com/@gtu075" className="bg-white" />
               <Icon
                 name="linkedin"
                 link="https://www.linkedin.com/in/muhammad-ardiansyah-firdaus-73473a2a4/"
+              />
+              <Icon
+                name="whatsapp"
+                link={`https://wa.me/6282113325302?text=${message}`}
               />
             </div>
           </div>
