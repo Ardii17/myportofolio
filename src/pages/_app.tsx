@@ -6,6 +6,7 @@ import {
   ThemeProvider,
 } from "@/components/elements/ThemeContext";
 import VanillaTilt from "vanilla-tilt";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = useContext(ThemeContext);
@@ -21,8 +22,14 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <ThemeProvider>
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <>
+      <Head >
+        <title>My Portofolio</title>
+        <link rel="icon" href="/./../Backgrounds/logo.png" type="image/png" />
+      </Head>
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
   );
 }
