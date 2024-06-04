@@ -4,15 +4,18 @@ import Link from "next/link";
 
 type proptypes = {
   img: string;
+  title: string;
+  desc: string
+  href: string
 };
 
 export default function BoxBlog(props: proptypes) {
-  const { img } = props;
+  const { img, title, desc, href } = props;
   const theme = useContext(ThemeContext);
 
   return (
     <Link
-      href="https://mafstore.vercel.app"
+      href={href}
       target="_blank"
       className="card"
       ref={theme?.tiltRef}
@@ -22,10 +25,9 @@ export default function BoxBlog(props: proptypes) {
         <img src={img} alt="rover" />
       </div>
       <div className="card-body">
-        <span className="tag tag-teal">Mafstore</span>
+        <span className="tag tag-teal">{title}</span>
         <p className="py-4">
-          Mafstore adalah sebuah website marketplace yang menjual berbagai macam
-          kebutuhan kita yang mana web Mafstore sudah dibangun menggunakan API access token dan Google Provider
+          {desc}
         </p>
         <div className="user">
           <img src="./../ProfileIMG/Ardi.png" alt="user" />

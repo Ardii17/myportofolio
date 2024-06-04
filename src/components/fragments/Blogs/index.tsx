@@ -16,9 +16,25 @@ const Blogs = () => {
         Projek projek yang saya kerjakan sejak awal
       </p>
       <div className="flex gap-6 justify-center w-full flex-wrap">
-        <BoxBlog img="./../IMGProject/mafstore.jpeg" />
-        <BoxBlog img="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg" />
-        <BoxBlog img="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" />
+        <BoxBlog
+          img="./../IMGProject/mafstore.jpeg"
+          href="https://mafstore.vercel.app/"
+          title="Mafstore"
+          desc="Mafstore adalah sebuah website marketplace yang menjual berbagai macam
+          kebutuhan kita yang mana web Mafstore sudah dibangun menggunakan API access token dan Google Provider"
+        />
+        <BoxBlog
+          img="./../IMGProject/mafwork.png"
+          href="https://mafwork.vercel.app/"
+          title="Mafwork"
+          desc="Mafwork adalah sebuha web yang memungkinkan pembuatan Kelas, pengumpulan Tugas, memainkan Quiz, dan melakukan Ujian secara mudah dan efisien."
+        />
+        <BoxBlog
+          img="https://images6.alphacoders.com/312/thumb-1920-312773.jpg"
+          href="#"
+          title="Coming Soon"
+          desc="Coming Soon"
+        />
       </div>
     </div>
   );
