@@ -25,7 +25,7 @@ export default function BoxBlog(props: proptypes) {
         <span className="tag tag-teal">Mafstore</span>
         <p className="py-4">
           Mafstore adalah sebuah website marketplace yang menjual berbagai macam
-          kebutuhan kita
+          kebutuhan kita yang mana web Mafstore sudah dibangun menggunakan API access token dan Google Provider
         </p>
         <div className="user">
           <img src="./../ProfileIMG/Ardi.png" alt="user" />
