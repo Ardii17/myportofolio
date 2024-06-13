@@ -15,6 +15,7 @@ const Blogs = () => {
       <p className="text-white text-sm opacity-70 text-center mb-4">
         Projek projek yang saya kerjakan sejak awal
       </p>
+      <p className="max-sm:block md:hidden text-sm text-gray-100 text-center">Tampilan dibawah disertai menggunakan teknik gyroscope</p>
       <div className="flex gap-6 justify-center w-full flex-wrap">
         <BoxBlog
           img="./../IMGProject/mafstore.jpeg"
@@ -24,7 +25,7 @@ const Blogs = () => {
           kebutuhan kita yang mana web Mafstore sudah dibangun menggunakan API access token dan Google Provider"
         />
         <BoxBlog
-          img="./../IMGProject/mafwork.png"
+          img="./../IMGProject/Mafwork.png"
           href="https://mafwork.vercel.app/"
           title="Mafwork"
           desc="Mafwork adalah sebuha web yang memungkinkan pembuatan Kelas, pengumpulan Tugas, memainkan Quiz, dan melakukan Ujian secara mudah dan efisien."

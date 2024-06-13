@@ -5,8 +5,8 @@ import Link from "next/link";
 type proptypes = {
   img: string;
   title: string;
-  desc: string
-  href: string
+  desc: string;
+  href: string;
 };
 
 export default function BoxBlog(props: proptypes) {
@@ -21,14 +21,12 @@ export default function BoxBlog(props: proptypes) {
       ref={theme?.tiltRef}
       data-tilt
     >
-      <div className="card-header">
+      <div className="card-header shadow">
         <img src={img} alt="rover" />
       </div>
       <div className="card-body">
         <span className="tag tag-teal">{title}</span>
-        <p className="py-4">
-          {desc}
-        </p>
+        <p className="py-4">{desc}</p>
         <div className="user">
           <img src="./../ProfileIMG/Ardi.png" alt="user" />
           <div className="user-info">
