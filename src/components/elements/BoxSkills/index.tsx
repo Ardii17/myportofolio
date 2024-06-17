@@ -19,17 +19,19 @@ export default function BoxSkills(props: types) {
         ref={boxRef}
       >
         {contentSkills.map((item: any, index: number) => (
-          <Tooltip arrow title={item.name} placement="bottom"
-            className="lg:max-w-28 md:max-w-28 max-sm:w-1/4 max-md:w-1/3 rounded-lg bg-blue-950 border-sm border-blue-900 shadow  p-4 flex items-center justify-center"
-            key={index}
-          >
-            <img
-              src={`/./Icons/Icons Normal/${item.name}.${
-                item.name === "next-js" ? "svg" : "png"
-              }`}
-              alt="Tes"
-              className="max-w-[50px] max-h-[50px] m-auto place-self-center"
-            />
+          <Tooltip arrow title={item.title} placement="bottom">
+            <div
+              className="lg:max-w-28 md:max-w-28 max-sm:w-1/4 max-md:w-1/3 rounded-lg bg-blue-950 border-sm border-blue-900 shadow  p-4 flex items-center justify-center"
+              key={index}
+            >
+              <img
+                src={`/./Icons/Icons Normal/${item.name}.${
+                  item.name === "next-js" ? "svg" : "png"
+                }`}
+                alt="Tes"
+                className="max-w-[50px] max-h-[50px] m-auto place-self-center"
+              />
+            </div>
           </Tooltip>
         ))}
       </div>
