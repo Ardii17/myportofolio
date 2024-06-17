@@ -35,11 +35,11 @@ const Skills = () => {
     },
     {
       name: "ts",
-      title: "ts",
+      title: "TypeScript",
     },
     {
       name: "next-js",
-      title: "next-js",
+      title: "Next JS",
     },
   ]);
   const [tools, setTools] = useState([

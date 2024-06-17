@@ -19,7 +19,6 @@ export default function BoxBlog(props: proptypes) {
       target="_blank"
       className="card"
       ref={theme?.tiltRef}
-      data-tilt
     >
       <div className="card-header shadow">
         <img src={img} alt="rover" />
