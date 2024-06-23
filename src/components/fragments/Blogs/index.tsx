@@ -23,7 +23,7 @@ const Blogs = () => {
           desc="Mafwork adalah sebuha web yang memungkinkan pembuatan Kelas, pengumpulan Tugas, memainkan Quiz, dan melakukan Ujian secara mudah dan efisien."
         />
         <BoxBlog
-          img="./../IMGProject/forum.jpg"
+          img="./../IMGProject/forum.png"
           href="#"
           title="Forum Kampus"
           desc="Forum Kampus adalah platform interaktif di mana mahasiswa dapat berbagi ide, berdiskusi tentang berbagai topik akademis, dan mengembangkan jaringan profesional."
