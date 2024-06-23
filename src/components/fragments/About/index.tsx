@@ -57,7 +57,11 @@ const About = () => {
                 name="facebook"
                 link="https://web.facebook.com/profile.php?id=100026299818838"
               />
-              <Icon name="tiktok" link="https://www.tiktok.com/@gtu075" className="bg-white" />
+              <Icon
+                name="tiktok"
+                link="https://www.tiktok.com/@gtu075"
+                className="bg-white"
+              />
               <Icon
                 name="linkedin"
                 link="https://www.linkedin.com/in/muhammad-ardiansyah-firdaus-73473a2a4/"
@@ -144,8 +148,11 @@ const About = () => {
               blog atau berita di homepage.
             </li>
             <li className="list-disc">
-              Website Kampus : Mengembangkan website kampus dengan fitur indeks
-              prestasi akademik dan forum kampus.
+              Website Forum Kampus : Saya bertindak sebagai Frontend Developer
+              untuk proyek website Forum Kampus, sebuah platform yang dirancang
+              seperti media sosial namun dikhususkan untuk mahasiswa. Website
+              ini memiliki fitur utama seperti halaman beranda untuk posting dan
+              forum tanya jawab (Q&A).
             </li>
             <li className="list-disc">
               Admin Panel Project : Mengembangkan admin panel dengan navigasi

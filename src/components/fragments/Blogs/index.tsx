@@ -15,15 +15,7 @@ const Blogs = () => {
       <p className="text-white text-sm opacity-70 text-center mb-4">
         Projek projek yang saya kerjakan sejak awal
       </p>
-      <p className="max-sm:block md:hidden text-sm text-gray-100 text-center">Tampilan dibawah disertai menggunakan teknik gyroscope</p>
       <div className="flex gap-6 justify-center w-full flex-wrap">
-        <BoxBlog
-          img="./../IMGProject/mafstore.jpeg"
-          href="https://mafstore.vercel.app/"
-          title="Mafstore"
-          desc="Mafstore adalah sebuah website marketplace yang menjual berbagai macam
-          kebutuhan kita yang mana web Mafstore sudah dibangun menggunakan API access token dan Google Provider"
-        />
         <BoxBlog
           img="./../IMGProject/Mafwork.png"
           href="https://mafwork.vercel.app/"
@@ -31,10 +23,17 @@ const Blogs = () => {
           desc="Mafwork adalah sebuha web yang memungkinkan pembuatan Kelas, pengumpulan Tugas, memainkan Quiz, dan melakukan Ujian secara mudah dan efisien."
         />
         <BoxBlog
-          img="https://images6.alphacoders.com/312/thumb-1920-312773.jpg"
+          img="./../IMGProject/forum.png"
           href="#"
-          title="Coming Soon"
-          desc="Coming Soon"
+          title="Forum Kampus"
+          desc="Forum Kampus adalah platform interaktif di mana mahasiswa dapat berbagi ide, berdiskusi tentang berbagai topik akademis, dan mengembangkan jaringan profesional."
+        />
+        <BoxBlog
+          img="./../IMGProject/mafstore.jpeg"
+          href="https://forum-kampus.vercel.app/"
+          title="Mafstore"
+          desc="Mafstore adalah sebuah website marketplace yang menjual berbagai macam
+          kebutuhan kita yang mana web Mafstore sudah dibangun menggunakan API access token dan Google Provider"
         />
       </div>
     </div>
