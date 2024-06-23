@@ -24,13 +24,13 @@ const Blogs = () => {
         />
         <BoxBlog
           img="./../IMGProject/forum.png"
-          href="#"
+          href="https://forum-kampus.vercel.app/"
           title="Forum Kampus"
           desc="Forum Kampus adalah platform interaktif di mana mahasiswa dapat berbagi ide, berdiskusi tentang berbagai topik akademis, dan mengembangkan jaringan profesional."
-        />
+          />
         <BoxBlog
           img="./../IMGProject/mafstore.jpeg"
-          href="https://forum-kampus.vercel.app/"
+          href="https://mafstore.vercel.app/"
           title="Mafstore"
           desc="Mafstore adalah sebuah website marketplace yang menjual berbagai macam
           kebutuhan kita yang mana web Mafstore sudah dibangun menggunakan API access token dan Google Provider"

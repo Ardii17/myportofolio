@@ -9,6 +9,7 @@ import Skills from "../fragments/Skill";
 import Notification from "../elements/Notification";
 import { ThemeContext } from "../elements/ThemeContext";
 import { Poppins } from "next/font/google";
+import ToTop from "../elements/ToTop";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Anda dapat menyesuaikan berat font yang diperlukan
@@ -43,6 +44,7 @@ const MainViews = () => {
       {theme?.notification && (
         <Notification onClick={() => theme?.handleNotification(false)} />
       )}
+      <ToTop />
     </div>
   );
 };

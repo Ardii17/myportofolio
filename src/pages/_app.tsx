@@ -7,6 +7,7 @@ import {
 } from "@/components/elements/ThemeContext";
 import Head from "next/head";
 
+
 export default function App({ Component, pageProps }: AppProps) {
   const theme = useContext(ThemeContext);
 
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Ardiansyah</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
         <link rel="icon" href="/./../Backgrounds/logo.png" type="image/png" />
       </Head>
       <ThemeProvider>
