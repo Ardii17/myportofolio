@@ -17,17 +17,17 @@ const Blogs = () => {
       </p>
       <div className="flex gap-6 justify-center w-full flex-wrap">
         <BoxBlog
-          img="./../IMGProject/Mafwork.png"
-          href="https://mafwork.vercel.app/"
-          title="Mafwork"
-          desc="Mafwork adalah sebuha web yang memungkinkan pembuatan Kelas, pengumpulan Tugas, memainkan Quiz, dan melakukan Ujian secara mudah dan efisien."
-        />
-        <BoxBlog
           img="./../IMGProject/forum.png"
-          href="https://forum-kampus.vercel.app/"
+          href="https://forka.vercel.app/"
           title="Forum Kampus"
           desc="Forum Kampus adalah platform interaktif di mana mahasiswa dapat berbagi ide, berdiskusi tentang berbagai topik akademis, dan mengembangkan jaringan profesional."
           />
+        <BoxBlog
+          img="./../IMGProject/Mafwork.png"
+          href="https://mafwork.vercel.app/"
+          title="Mafwork"
+          desc="Mafwork adalah sebuah web yang memungkinkan pembuatan Kelas, pengumpulan Tugas, memainkan Quiz, dan melakukan Ujian secara mudah dan efisien."
+        />
         <BoxBlog
           img="./../IMGProject/mafstore.jpeg"
           href="https://mafstore.vercel.app/"
