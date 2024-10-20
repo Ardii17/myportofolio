@@ -8,7 +8,7 @@ const storage = getStorage(app);
 export async function getFile(callback: Function) {
   const storageRef = ref(
     storage,
-    "https://firebasestorage.googleapis.com/v0/b/mafnext-1.appspot.com/o/File%2FCV%20Muhammad%20Ardiansyah%20Firdaus.pdf?alt=media&token=5a307092-c456-42d3-b957-b26ea57ec94b"
+    "https://firebasestorage.googleapis.com/v0/b/mafnext-1.appspot.com/o/File%2FCV%20Muhammad%20Ardiansyah%20Firdaus%20(1).pdf?alt=media&token=cb844795-4021-4e5e-8d6e-13fe90953995"
   );
   getDownloadURL(storageRef)
     .then((url) => {

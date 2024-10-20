@@ -41,11 +41,21 @@ const Skills = () => {
       name: "next-js",
       title: "Next JS",
     },
+    {
+      name: "dart",
+      title: "Dart",
+    },
+    {
+      name: "flutter",
+      title: "Flutter",
+    },
   ]);
+
   const [tools, setTools] = useState([
     { name: "VSC", title: "Visual Studio Code" },
     { name: "canva", title: "Canva" },
-    { name: "figma", title: "figma" },
+    { name: "figma", title: "Figma" },
+    { name: "android-studio", title: "Android Studio" },
   ]);
 
   return (
