@@ -104,7 +104,7 @@ const Navbar = () => {
       </div>
       <div
         className={`${
-          menu ? "top-4" : "-top-80"
+          menu ? "top-4" : "-top-96"
         } z-0 pt-10 fixed left-0 right-0 transition-all bg-yellow-600`}
         ref={navbarRef}
       >
@@ -114,6 +114,8 @@ const Navbar = () => {
           <List onClick={theme?.scrollToSkills}>{t("skills")}</List>
           <List onClick={theme?.scrollToBlog}>{t("projects")}</List>
           <List onClick={theme?.scrollToKontak}>{t("contact")}</List>
+          <List onClick={() => changeLanguage("en")}>ENG</List>
+          <List onClick={() => changeLanguage("id")}>IND</List>
         </ul>
       </div>
     </div>
