@@ -1,16 +1,15 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { useContext, useEffect, useState } from "react";
+import { appWithTranslation } from "next-i18next";
+import { useContext } from "react";
+import Head from "next/head";
 import {
   ThemeContext,
   ThemeProvider,
 } from "@/components/elements/ThemeContext";
-import Head from "next/head";
 
 
-export default function App({ Component, pageProps }: AppProps) {
-  const theme = useContext(ThemeContext);
-
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -24,3 +23,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+export default appWithTranslation(App);

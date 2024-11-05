@@ -1,9 +1,11 @@
 import { ThemeContext } from "@/components/elements/ThemeContext";
 import TypingParallax from "@/components/elements/TypedParallax";
 import { getFile } from "@/lib/firebase/service";
+import { useTranslation } from "next-i18next";
 import { useContext } from "react";
 
 const Home = () => {
+  const { t } = useTranslation("common");
   const theme = useContext(ThemeContext);
   const handleDownload = async () => {
     try {
@@ -22,23 +24,16 @@ const Home = () => {
     >
       <div className="text-white lg:w-2/3 max-sm:w-full md:w-1/2 flex flex-col gap-3">
         <p className="text-2xl tracking-wide font-semibold max-sm:text-xl max-md:text-xl">
-          - I'm{" "}
-          <span className="text-yellow-400">Muhammad Ardiansyah Firdaus</span>
+          {t("home-sayhi")}
+          <span className="text-yellow-400">{t("home-welcome")}</span>
         </p>
         <TypingParallax />
-        <p>
-          Halo, saya Muhammad Ardiansyah Firdaus, seorang pengembang web yang
-          bersemangat dengan pengalaman dalam membuat aplikasi web responsif dan
-          menarik. Saya ahli dalam menggunakan teknologi seperti HTML, CSS,
-          Javascript, React, Next JS, Type Script, Tailwind, dll. Saya percaya
-          bahwa desain yang baik adalah kunci untuk pengalaman pengguna yang
-          luar biasa.
-        </p>
+        <p>{t("home-description")}</p>
         <button
           className="place-self-start bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700"
           onClick={handleDownload}
         >
-          Download CV
+          {t("home-cv")}
         </button>
       </div>
       <div className="lg:w-1/2 max-md:w-1/2 md:w-1/2 max-sm:hidden lg:parallax">

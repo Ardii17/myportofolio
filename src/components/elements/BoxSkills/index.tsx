@@ -21,7 +21,7 @@ export default function BoxSkills(props: types) {
         {contentSkills.map((item: any, index: number) => (
           <Tooltip arrow title={item.title} placement="bottom">
             <div
-              className="lg:max-w-28 md:max-w-28 max-sm:w-1/4 max-md:w-1/3 rounded-lg bg-blue-950 border-sm border-blue-900 shadow  p-4 flex items-center justify-center"
+              className="lg:max-w-28 md:max-w-28 max-sm:w-1/4 max-md:w-1/3 rounded-lg bg-[#111b40] border-sm border-blue-900 shadow  p-4 flex items-center justify-center"
               key={index}
             >
               <img

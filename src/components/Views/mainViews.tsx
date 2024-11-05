@@ -30,10 +30,7 @@ const MainViews = () => {
   }, [theme?.notification]);
 
   return (
-    <div
-      className={poppins.className}
-      style={{ backgroundImage: "url(./../Backgrounds/Background.png)" }}
-    >
+    <div className={`${poppins.className} bg-blue-950`}>
       <Navbar />
       <Home />
       <About />

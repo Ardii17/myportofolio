@@ -1,14 +1,22 @@
 import List from "@/components/elements/List";
 import { ThemeContext } from "@/components/elements/ThemeContext";
+import { useTranslation } from "next-i18next";
 import { useContext, useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const { t } = useTranslation("common");
   const theme = useContext(ThemeContext);
   const [navbar, setNavbar] = useState(true);
   const [menu, setMenu] = useState(false);
   const navbarRef: any = useRef(null);
   const menuButtonRef: any = useRef(null);
   const [positionNavbar, setPositionNavbar] = useState(0);
+  const router: any = useRouter();
+
+  const changeLanguage = (lng: any) => {
+    router.push(router.pathname, router.asPath, { locale: lng });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +40,11 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      if (navbarRef.current && !navbarRef.current.contains(e.target as Node) && !menuButtonRef.current.contains(e.target as Node)) {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(e.target as Node) &&
+        !menuButtonRef.current.contains(e.target as Node)
+      ) {
         setMenu(false);
       }
     };
@@ -55,11 +67,29 @@ const Navbar = () => {
           Ardiansyah
         </p>
         <ul className="flex gap-4 items-center">
-          <List onClick={theme?.scrollToBeranda}>Beranda</List>
-          <List onClick={theme?.scrollToTentang}>Tentang</List>
-          <List onClick={theme?.scrollToSkills}>Skill</List>
-          <List onClick={theme?.scrollToBlog}>Blog</List>
-          <List onClick={theme?.scrollToKontak}>Kontak</List>
+          <List onClick={theme?.scrollToBeranda}>{t("home")}</List>
+          <List onClick={theme?.scrollToTentang}>{t("about")}</List>
+          <List onClick={theme?.scrollToSkills}>{t("skills")}</List>
+          <List onClick={theme?.scrollToBlog}>{t("projects")}</List>
+          <List onClick={theme?.scrollToKontak}>{t("contact")}</List>
+        </ul>
+        <ul className="flex gap-4 items-center">
+          <List
+            onClick={() => changeLanguage("en")}
+            className={`hover:text-yellow-500 ${
+              router.locale === "en" ? "text-yellow-400" : ""
+            }`}
+          >
+            ENG
+          </List>
+          <List
+            onClick={() => changeLanguage("id")}
+            className={`hover:text-yellow-500 ${
+              router.locale === "id" ? "text-yellow-400" : ""
+            }`}
+          >
+            IND
+          </List>
         </ul>
       </div>
       <div className="flex gap-4 md:hidden lg:hidden bg-yellow-600 shadow p-5 w-full fixed top-0 left-0 right-0 z-10">
@@ -79,11 +109,11 @@ const Navbar = () => {
         ref={navbarRef}
       >
         <ul className="left-0 p-5 flex-col flex gap-4">
-          <List onClick={theme?.scrollToBeranda}>Beranda</List>
-          <List onClick={theme?.scrollToTentang}>Tentang</List>
-          <List onClick={theme?.scrollToSkills}>Skill</List>
-          <List onClick={theme?.scrollToBlog}>Blog</List>
-          <List onClick={theme?.scrollToKontak}>Kontak</List>
+          <List onClick={theme?.scrollToBeranda}>{t("home")}</List>
+          <List onClick={theme?.scrollToTentang}>{t("about")}</List>
+          <List onClick={theme?.scrollToSkills}>{t("skills")}</List>
+          <List onClick={theme?.scrollToBlog}>{t("projects")}</List>
+          <List onClick={theme?.scrollToKontak}>{t("contact")}</List>
         </ul>
       </div>
     </div>

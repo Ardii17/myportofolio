@@ -1,8 +1,10 @@
 import Icon from "@/components/elements/Icon";
 import { ThemeContext } from "@/components/elements/ThemeContext";
+import { useTranslation } from "next-i18next";
 import { useContext, useState } from "react";
 
 const About = () => {
+  const { t } = useTranslation("common");
   const theme = useContext(ThemeContext);
   const [onMyBiodata, setOnMyBiodata] = useState(false);
   const message = "Hallo, I Would like to contact you";
@@ -10,13 +12,13 @@ const About = () => {
   return (
     <div
       ref={theme?.tentangRef}
-      className="w-full lg:h-screen md:px-12 h-auto py-6 max-sm:px-6 sm:px-6 max-md:px-12 lg:px-14 bg-blue-800 lg:block justify-center lg:parallax min-lg:parallax"
+      className="w-full lg:h-screen md:px-12 h-auto py-6 max-sm:px-6 sm:px-6 max-md:px-12 lg:px-14 bg-[#111b40] lg:block justify-center lg:parallax min-lg:parallax"
     >
       <p className="text-center text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
-        Tentang Saya
+        {t("about-title")}
       </p>
       <p className="text-white text-sm opacity-70 text-center mb-4">
-        Profil lengkap tentang saya
+        {t("about-description")}
       </p>
       <div className="max-sm:block max-md:flex flex gap-6 max-sm:mt-5 lg:mt-16 justify-center h-full">
         <div className="lg:w-1/3 max-sm:w-full max-md:w-2/6 md:w-2/6 relative transition-transform ease-in-out translate-y-0">
@@ -28,29 +30,23 @@ const About = () => {
         </div>
         <div className="lg:w-2/3 max-sm:w-full max-md:w-4/6 md:w-4/6 text-white flex gap-2 flex-col">
           <p className="text-yellow-400 font-semibold">
-            Hello I'm Muhammad Adiansyah Firdaus 🙌
+            {t("about-welcome")} 🙌
           </p>
           <p className="text-yellow-400 font-semibold">
-            A Web Development based in Indonesia
+            {t("about-developer")}
           </p>
           <p className="text-base max-sm:text-justify max-md:text-justify">
-            Muhammad Ardiansyah Firdaus adalah mahasiswa semester 4 Jurusan
-            Teknik Informatika di Universitas Muhammadiyah Bandung. Saya
-            memiliki minat besar dalam dunia teknologi, khususnya sebagai web
-            dan mobile developer. Sebagai web developer asal Indonesia, saya
-            memiliki keahlian dalam HTML, CSS (terutama menggunakan Tailwind
-            CSS), JavaScript, React JS, dan Next JS. Saya selalu berusaha untuk
-            terus belajar dan mengembangkan kemampuan saya di bidang ini.
+            {t("about-me")}
           </p>
           <button
             onClick={() => setOnMyBiodata(true)}
             className="bg-yellow-600 px-4 py-2 cursor-pointer rounded hover:bg-yellow-700 w-auto text-center"
           >
-            Lihat Selengkapnya
+            {t("about-button")}
           </button>
           <hr className="border-none h-1 bg-yellow-600 rounded-full" />
           <div className="block gap-2 w-full">
-            <p className="font-semibold">Media Sosial Saya</p>
+            <p className="font-semibold">{t("about-sosmed")}</p>
             <div className="flex gap-5 mt-2">
               <Icon name="instagram" link="https://www.instagram.com/ardi4_/" />
               <Icon

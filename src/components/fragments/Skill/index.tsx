@@ -1,8 +1,10 @@
 import BoxSkills from "@/components/elements/BoxSkills";
 import { ThemeContext } from "@/components/elements/ThemeContext";
-import { useContext, useEffect, useState } from "react";
+import { useTranslation } from "next-i18next";
+import { useContext, useState } from "react";
 
 const Skills = () => {
+  const { t } = useTranslation("common");
   const theme = useContext(ThemeContext);
   const [skills, setSkills] = useState([
     {
@@ -65,13 +67,19 @@ const Skills = () => {
       style={{ backgroundImage: "url(./../Background/Background.png)" }}
     >
       <p className="text-center max-sm:px-4 text-xl max-sm:mb-4 mb-3 max-md:mb-4 text-white font-semibold">
-        Keahlian Saya
+        {t("skills-title")}
       </p>
       <p className="text-white mb-4 max-sm:px-4 text-center opacity-70 text-sm">
-        Keahlian saya dalam Programming dan alat yang saya gunakan 
+        {t("skills-description")}
       </p>
-      <BoxSkills contentSkills={skills} titleSkills="Keahlian Pemrograman" />
-      <BoxSkills contentSkills={tools} titleSkills="Alat yang digunakan" />
+      <BoxSkills
+        contentSkills={skills}
+        titleSkills={t("skills-proramming-title")}
+      />
+      <BoxSkills
+        contentSkills={tools}
+        titleSkills={t("tools-proramming-title")}
+      />
     </div>
   );
 };
